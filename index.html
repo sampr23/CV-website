@@ -6,7 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samuel Poulin-Royer</title>
 </head>
+
+<!-- Load the javascript files and the css-->
+<script src="/src/javascript/script.js"></script>
+<script src="/src/javascript/header.js"></script>
+<link rel="stylesheet" href="/src/css/style.css">
+
 <body>
-    
+    <!-- Load the header -->
+    <div id="header"></div>
+    <div class="tab">
+        <button id="mainMenuTab" class="tablinks selected" onclick="menuTab(event, 'mainMenu')">Main Menu</button>
+        <button class="tablinks" onclick="menuTab(event, 'skills')">Skills</button>
+        <button class="tablinks" onclick="menuTab(event, 'study')">Study</button>
+    </div>
+      <!-- <div id="mainMenu" class="tabcontent"> -->
+        <div class="emptybox"></div>
+        <div class="presentation">
+            <div class="bubblePresentation">
+                <p>Hello I'm</p>
+            </div>
+            <div>
+                <p class="myname">Samuel Poulin-Royer</p>
+            </div>
+            <div>
+                <p class="myrole">Developper Full Stack</p>
+            </div>
+            <div class="information">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <img class="logoicon" align="left" src="/src/images/envelope.png"/>
+                <p class="informationfield">sampr2323@gmail.com</p>
+                <p class="informationfield">1-418-208-6285</p>
+                <p class="informationfield">Canada, Quebec, Montmagny</p>
+            </div>
+        </div>
+        <img title="Samuel Poulin-Royer" class="profilPicture" src="/src/images/me.jpg">
+      <!-- </div> -->
+      
+      <div id="skills" class="tabcontent">
+        <h3 class="pageTitle">Skills</h3>
+        <p>Text here</p> 
+      </div>
+      
+      <div id="study" class="tabcontent">
+        <h3 class="pageTitle">Study</h3>
+        <p>Text here</p>
+      </div>
+    <script>menuTab(null ,'mainMenu');</script>
+    <script>generateHeader();</script>
+
+    <!-- After the box -->
+    <!-- <h1>after title</h1> -->
 </body>
 </html>
