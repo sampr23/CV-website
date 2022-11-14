@@ -11,6 +11,7 @@ function menuTab(evt, tabName)
     // console.log(evt.currentTarget);
     if(evt != null)
     {
+        console.log("caca");
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
         for (i = 0; i < tabcontent.length; i++) {
@@ -28,5 +29,5 @@ function menuTab(evt, tabName)
         }
     }
     else
-        document.getElementById(tabName).style.display = "block";
+        document.getElementById("mainMenuTab").style.display = "block";
 }
