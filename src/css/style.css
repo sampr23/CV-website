@@ -42,12 +42,14 @@ body {
 
   /* Profile picture */
   .profilPicture {
+    
     border-radius: 50rem;
     border: 3px solid rgb(0, 0, 0);
     width: 250;
     height: 250px;
     box-shadow: 5px 0px 20px 0px rgba(85, 85, 85, 0.95);
-    margin-right: 15%;
+    margin-right: 10%;
+
   }
 
   /* All the thing with the profil picture and the description */
@@ -55,7 +57,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 500px;
+    /* width: 500px; */
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -132,6 +134,33 @@ body {
     height: 17px;
     /* margin-right: auto; */
   }
+
+  .flexbox {
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+  }
+
+  .alignedPicture {
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+  }
+
+  .logoToWebsite {
+    height: 30px;
+    width: 30px;
+    margin: 36px; 
+  }
+
+  .flexboxForLogo {
+    display: flex; 
+    justify-content: space-around;
+    /* height: 20px; 
+    width: 50px; */
+    /* margin-left: -50%; */
+  }
+
 
 
   
