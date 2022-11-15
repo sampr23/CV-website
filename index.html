@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Poulin-Royer</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Poulin-Royer</title>
 </head>
 
 <!-- Load the javascript files and the css-->
@@ -13,74 +14,96 @@
 <link rel="stylesheet" href="/src/css/style.css">
 
 <body>
-    <!-- Load the header -->
-    <div id="header"></div>
-    <div class="tab">
-        <button id="mainMenuTab" class="tablinks selected" onclick="menuTab(event, 'mainMenuTab')">Main Menu</button>
-        <button class="tablinks" onclick="menuTab(event, 'skills')">Skills</button>
-        <button class="tablinks" onclick="menuTab(event, 'study')">Study</button>
-    </div>
-      <!-- <div id="mainMenu" class="tabcontent"> -->
-        <div class="emptybox"></div>
-        <div class="flexbox">
-          <div class="presentation">
-            <div class="bubblePresentation">
-              <p>Hello I'm</p>
-            </div>
-            <div class="alignedPicture">
-              <p class="myname">Samuel Poulin-Royer</p>
-            </div>
-            <div>
-              <p class="myrole">Developper Full Stack</p>
-            </div>
-            <!-- Small box with the information about me  -->
-            <div class="information">
-              <!-- Email -->
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-                <a href="mailto:sampr2323@gmail.com">
-                  <img class="logoicon" align="left" src="/src/images/envelope.png"/>
-                </a>
-              <p class="informationfield">sampr2323@gmail.com</p>
-              <!-- Phone Number -->
-              <a href="tel:1-418-208-6285">
-              <img class="logoicon" align="left" src="/src/images/phone.png"/>
-              </a>
-              <p class="informationfield">1-418-208-6285</p>
-              <!-- Geolocalisation -->
-              <a href="https://www.google.com/maps/place/Montmagny,+QC/@46.9545106,-70.6894796,11z/data=!3m1!4b1!4m5!3m4!1s0x4cb929c306cb53c7:0x7e930bc2e074c2c7!8m2!3d46.9801031!4d-70.5565719" rel="noopener noreferrer" target="_blank">
-                <img class="logoicon" align="left" src="/src/images/location.png"/>
-              </a>
-              <p class="informationfield">Canada, Quebec, Montmagny</p>
-            </div>
-            <div class="flexboxForLogo">
-              <div>
-                <a href="https://www.facebook.com/sampr23" rel="noopener noreferrer" target="_blank"> <img class="logoToWebsite" title="Facebook" src="/src/images/facebookLogo.png"/></a>
-              </div>
-              <div>
-                <a href="https://www.linkedin.com/in/samuel-poulin-royer-95b837226/" rel="noopener noreferrer" target="_blank"><img class="logoToWebsite" title="LinkedIn" src="/src/images/linkedinLogo.png"/></a>
-              </div>
-              <div>
-                <a href="https://github.com/sampr23/" rel="noopener noreferrer" target="_blank"><img class="logoToWebsite" title="GitHub" src="/src/images/githubLogo.png"></a>
-              </div>
-            </div>
-          </div>
-          <img title="Samuel Poulin-Royer" class="profilPicture" src="/src/images/me.jpg">
+  <!-- The header menu -->
+  <div class="tab">
+    <button id="mainMenuTab" class="tablinks selected" onclick="menuTab(event, 'mainMenu')">Main Menu</button>
+    <button class="tablinks" onclick="menuTab(event, 'skills')">Skills</button>
+    <button class="tablinks" onclick="menuTab(event, 'study')">Study</button>
+  </div>
+  <div id="mainMenu" class="tabcontent mainMenu">
+    <div class="flexbox">
+      <div class="presentation">
+        <div class="bubblePresentation">
+          <p>Hello I'm</p>
         </div>
-      <!-- </div> -->
-      
-      <div id="skills" class="tabcontent">
-        <h3 class="pageTitle">Skills</h3>
-        <p>Text here</p> 
+        <div class="alignedPicture">
+          <p class="myname">Samuel Poulin-Royer</p>
+        </div>
+        <div>
+          <p class="myrole">Developper Full Stack</p>
+        </div>
+        <!-- Small box with the information about me  -->
+        <div class="information">
+          <!-- Email -->
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+          <a href="mailto:sampr2323@gmail.com">
+            <img class="logoicon" align="left" src="/src/images/envelope.png" />
+          </a>
+          <p class="informationfield">sampr2323@gmail.com</p>
+          <!-- Phone Number -->
+          <a href="tel:1-418-208-6285">
+            <img class="logoicon" align="left" src="/src/images/phone.png" />
+          </a>
+          <p class="informationfield">1-418-208-6285</p>
+          <!-- Geolocalisation -->
+          <a href="https://www.google.com/maps/place/Montmagny,+QC/@46.9545106,-70.6894796,11z/data=!3m1!4b1!4m5!3m4!1s0x4cb929c306cb53c7:0x7e930bc2e074c2c7!8m2!3d46.9801031!4d-70.5565719"
+            rel="noopener noreferrer" target="_blank">
+            <img class="logoicon" align="left" src="/src/images/location.png" />
+          </a>
+          <p class="informationfield">Canada, Quebec, Montmagny</p>
+        </div>
+        <div class="flexboxForLogo">
+          <div>
+            <a href="https://www.facebook.com/sampr23" rel="noopener noreferrer" target="_blank"> <img
+                class="logoToWebsite" title="Facebook" src="/src/images/facebookLogo.png" /></a>
+          </div>
+          <div>
+            <a href="https://www.linkedin.com/in/samuel-poulin-royer-95b837226/" rel="noopener noreferrer"
+              target="_blank"><img class="logoToWebsite" title="LinkedIn" src="/src/images/linkedinLogo.png" /></a>
+          </div>
+          <div>
+            <a href="https://github.com/sampr23/" rel="noopener noreferrer" target="_blank"><img class="logoToWebsite"
+                title="GitHub" src="/src/images/githubLogo.png"></a>
+          </div>
+        </div>
       </div>
-      
-      <div id="study" class="tabcontent">
-        <h3 class="pageTitle">Study</h3>
-        <p>Text here</p>
+      <img title="Samuel Poulin-Royer" class="profilPicture" src="/src/images/me.jpg">
+    </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills" class="tabcontent">
+        <div class="center_box">
+        <div class="skill_card">
+          <h1 class="skill_name">HTML</h1>
+        </div>
+        <div class="skill_card">
+          <h1 class="skill_name">C#</h1>
+        </div>
+        <div class="skill_card">
+
+        </div>
+        <div class="skill_card">
+
+        </div>
+        <div class="skill_card">
+
+        </div>
+        <div class="skill_card">
+
+        </div>
       </div>
-    <script>menuTab(null ,'mainMenu');</script>
+    </div>
+
+    <div id="study" class="tabcontent">
+      <h3 class="pageTitle">Study</h3>
+      <p>Text here</p>
+    </div>
+    <script>menuTab(null, 'mainMenu');</script>
     <script>generateHeader();</script>
 
     <!-- After the box -->
     <!-- <h1>after title</h1> -->
 </body>
+
 </html>
