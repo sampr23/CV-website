@@ -43,6 +43,11 @@ body {
 
   .mainMenu {
     display: block;
+    animation: fadeIn 3s;
+  }
+
+  .mainMenu .information {
+    animation: fadeIn 5s;
   }
 
   /* Profile picture */
@@ -125,6 +130,7 @@ body {
 
   .logoicon {
     height: 17px;
+    /* animation: fadeIn 60s; */
   }
 
   .flexbox {
@@ -145,6 +151,18 @@ body {
     height: 30px;
     width: 30px;
     margin: 36px; 
+    animation: logoToWebsite 1.5s linear forwards;
+  }
+
+  @keyframes logoToWebsite {
+    0% {
+      opacity: 0;
+      margin-left: -700%;
+    }
+    100% {
+      opacity: 1;
+      margin-left: 0%;
+    }
   }
 
   .flexboxForLogo {
@@ -153,15 +171,195 @@ body {
   }
 
   .center_box {
+    
     display: flex;
-    justify-content: space-around;
+    width: 50vw;
+    justify-content: space-between;
     margin: 0;
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 35%;
+    left: 57%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    flex-wrap: wrap;
   }
+  
+
+  /* All the progress bar css */
+  .skill_card {
+    flex: 50%;
+    font-size: 75%;
+  }
+
+  .progress_bar {
+    background: #959595;
+    width: 50%;
+    height: 10px;
+    border-radius: 5px;
+  }
+
+  .progress_bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+    /* background: red; */
+  }
+
+  .progress_bar div span{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #060606;
+    float: right;
+    margin-top: -10px;
+    margin-right: -15px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .html {
+    background: #f06529;
+    animation: html 2s linear forwards;
+    animation-timing-function:ease-out;
+  }
+
+  .html span {
+    border: #f06529 1px solid;
+    animation: fadeIn 3s;
+  }
+
+  .css {
+    background: #2965f1;
+    animation: css 2s linear forwards;
+    animation-timing-function:ease-out;
+  }
+
+  .css span {
+    border: #2965f1 1px solid;
+    animation: fadeIn 3s;
+  }
+
+  .javascript {
+    background: #f0db4f;
+    animation: javascript 2s linear forwards;
+    animation-timing-function:ease-out;
+  }
+
+  .javascript span {
+    border: #f0db4f 1px solid;
+    animation: fadeIn 3s;
+  }
+
+  .mysql {
+    background: #00758f;
+    animation: mysql 2s linear forwards;
+    animation-timing-function:ease-out;
+  }
+
+  .mysql span {
+    border: #00758f 1px solid;
+    animation: fadeIn 3s;
+  }
+
+  .php {
+    background: #8993be;
+    animation: php 2s linear forwards;
+    animation-timing-function:ease-out;
+  }
+
+  .php span {
+    border: #8993be 1px solid;
+    animation: fadeIn 3s;
+  }
+
+  .csharp {
+    background: #A179DC;
+    animation: csharp 2s linear forwards;
+    animation-timing-function:ease-out;
+  }
+
+  .csharp span {
+    border: #A179DC 1px solid;
+    animation: fadeIn 3s;
+  }
+
+  .ruby {
+    background: red;
+    animation: ruby 2s linear forwards;
+    animation-timing-function:ease-out;
+  }
+
+  .ruby span {
+    border: red 1px solid;
+    animation: fadeIn 3s;
+  }
+
+  .python {
+    background: #FFD43B;
+    animation: python 2s linear forwards;
+    animation-timing-function:ease-out;
+  }
+
+  .python span {
+    border: #FFD43B 1px solid;
+    animation: fadeIn 3s;
+  }
+
+  @keyframes python {
+    100% {
+      width: 20%;
+    }
+  }
+
+  @keyframes ruby {
+    100% {
+      width: 35%;
+    }
+  }
+
+  @keyframes csharp {
+    100% {
+      width: 30%;
+    }
+  }
+
+  @keyframes php {
+    100% {
+      width: 65%;
+    }
+  }
+
+  @keyframes mysql {
+    100% {
+      width: 50%;
+    }
+  }
+
+  @keyframes javascript {
+    100% {
+      width: 70%;
+    }
+  }
+
+  @keyframes css {
+    100% {
+      width: 60%;
+    }
+  }
+
+  @keyframes html {
+    100% {
+      width: 75%;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 
 
   
