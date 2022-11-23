@@ -151,7 +151,8 @@ body {
     height: 30px;
     width: 30px;
     margin: 36px; 
-    animation: logoToWebsite 1.5s linear forwards;
+    animation: logoToWebsite 3s linear forwards;
+    animation-timing-function:ease-out;
   }
 
   @keyframes logoToWebsite {
