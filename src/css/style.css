@@ -1,366 +1,317 @@
 body {
     background-color: #060606;
     color: #ffffff;
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-}
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
 
+    "Arial", sans-serif;
+  }
 /* Style the tab */
 .tab {
-    /* overflow: hidden; */
     display: flex;
     justify-content: center;
-    gap: 2%;
+    overflow: hidden;
+
+  /*  */
   }
-  
-  /* Style the buttons inside the tab */
-  .tab button {
-    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-    background-color: #060606; /* Green */
-    color: #ffffff;
-    float: right;
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #060606;
     border: none;
-    outline: none;
+    color: #ffffff;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.7s;
+    float: right;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     font-size: 17px;
     justify-content: space-between;
-  }
+    outline: none;
+    padding: 14px 16px;
+    transition: 0.7s;
 
-  
-  /* Create an active/current tablink class */
-  .tab button.selected {
+    "Arial", sans-serif;
+  }
+/* Create an active/current tablink class */
+.tab button.selected {
     border-bottom: 2px solid white;
     padding-bottom: 5px;
   }
-  
-  /* Style the tab content */
-  .tabcontent {
+/* Style the tab content */
+.tabcontent {
+    border-top: none;
     display: none;
     padding: 6px 12px;
-    border-top: none;
   }
-
-  .mainMenu {
-    display: block;
+.mainMenu {
     animation: fadeIn 3s;
+    display: block;
   }
-
-  .mainMenu .information {
+.mainMenu .information {
     animation: fadeIn 5s;
   }
-
-  /* Profile picture */
-  .profilPicture {
-    
+/* Profile picture */
+.profilPicture {
     border-radius: 50rem;
     border: 3px solid rgb(0, 0, 0);
-    width: 250;
-    height: 250px;
     box-shadow: 5px 0px 20px 0px rgba(85, 85, 85, 0.95);
+    height: 250px;
     margin-right: 10%;
-
+    width: 250;
   }
-
-  /* All the thing with the profil picture and the description */
-  .presentation {
+/* All the thing with the profil picture and the description */
+.presentation {
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
   }
-
-
-  .pageTitle {
-    font-size: 35px;
+.pageTitle {
     color: white;
+    font-size: 35px;
   }
-
-
-
-  .bubblePresentation {
-    background-color: #006AFF;
-    color: #ffffff;
+.bubblePresentation {
+    background-color: #006aff;
     border-radius: 50px 50px 50px 0px;
+    color: #ffffff;
     font-size: 1rem;
-    width: 20%;
+    font-weight: bold;
     height: 1.7rem;
+    line-height: 0px;
     padding: 10px;
     text-align: center;
-    font-weight: bold;
-    line-height: 0px;
+    width: 20%;
   }
-
-  .emptybox {
+.emptybox {
     height: 5rem;
   }
-
-  .myname {
+.myname {
     color: #ffffff;
     font-size: 2.5rem;
+    font-weight: bold;
     height: 1rem;
-    padding: 10px;
-    text-align: left;
-    font-weight: bold;
-    vertical-align: middle;
     margin-top: 5%;
-  }
-
-  .myrole {
-    color: #ffffff;
-    border-radius: 50px 50px 50px 0px;
-    font-size: 1.75rem;
     padding: 10px;
     text-align: left;
-    font-weight: bold;
     vertical-align: middle;
-    margin-top: -5%;
   }
-
-  .informationfield {
-    width: 250px;
-    color: #ffffff;
+.myrole {
     border-radius: 50px 50px 50px 0px;
+    color: #ffffff;
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-top: -5%;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+  }
+.informationfield {
+    border-radius: 50px 50px 50px 0px;
+    color: #ffffff;
     font-size: 1rem;
+    font-weight: bold;
+    margin-top: -5%;
     padding: 10px;
     text-align: right;
-    font-weight: bold;
     vertical-align: middle;
-    margin-top: -5%;
+    width: 250px;
   }
-
-  .logoicon {
+.logoicon {
+    animation: fadeIn 60s;
     height: 17px;
-    /* animation: fadeIn 60s; */
-  }
 
-  .flexbox {
+  /*  */
+  }
+.flexbox {
     display: flex;
-    justify-content: center;
     gap: 15%;
+    justify-content: center;
     padding-block: 10vh;
   }
-
-  .alignedPicture {
-    display: flex;
+.alignedPicture {
     align-items: center;
+    display: flex;
     height: 5%;
     padding-block: 4vh;
   }
-
-  .logoToWebsite {
-    height: 30px;
-    width: 30px;
-    margin: 36px; 
+.logoToWebsite {
+    animation-timing-function: ease-out;
     animation: logoToWebsite 3s linear forwards;
-    animation-timing-function:ease-out;
+    height: 30px;
+    margin: 36px;
+    width: 30px;
   }
-
-  @keyframes logoToWebsite {
-    0% {
-      opacity: 0;
+@keyframes logoToWebsite {
+  0% {
       margin-left: -700%;
+      opacity: 0;
     }
-    100% {
-      opacity: 1;
+  100% {
       margin-left: 0%;
+      opacity: 1;
     }
   }
-
-  .flexboxForLogo {
-    display: flex; 
+.flexboxForLogo {
+    display: flex;
     justify-content: space-around;
   }
-
-  .center_box {
-    
+.center_box {
+    -ms-transform: translate(-50%, -50%);
     display: flex;
-    width: 50vw;
+    flex-wrap: wrap;
     justify-content: space-between;
+    left: 57%;
     margin: 0;
     position: absolute;
     top: 35%;
-    left: 57%;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    flex-wrap: wrap;
+    width: 50vw;
   }
-  
-
-  /* All the progress bar css */
-  .skill_card {
+/* All the progress bar css */
+.skill_card {
     flex: 50%;
     font-size: 75%;
   }
-
-  .progress_bar {
+.progress_bar {
     background: #959595;
+    border-radius: 5px;
+    height: 10px;
     width: 50%;
-    height: 10px;
-    border-radius: 5px;
   }
-
-  .progress_bar div{
-    height: 10px;
+.progress_bar div {
+    background: red;
     border-radius: 5px;
+    height: 10px;
     width: 0%;
-    /* background: red; */
-  }
 
-  .progress_bar div span{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
+  /*  */
+  }
+.progress_bar div span {
+    align-items: center;
     background: #060606;
-    float: right;
-    margin-top: -10px;
-    margin-right: -15px;
+    border-radius: 50%;
     color: #fff;
     display: flex;
-    align-items: center;
+    float: right;
+    height: 30px;
     justify-content: center;
+    margin-right: -15px;
+    margin-top: -10px;
+    width: 30px;
   }
-
-  .html {
-    background: #f06529;
+.html {
+    animation-timing-function: ease-out;
     animation: html 2s linear forwards;
-    animation-timing-function:ease-out;
+    background: #f06529;
   }
-
-  .html span {
+.html span {
+    animation: fadeIn 3s;
     border: #f06529 1px solid;
-    animation: fadeIn 3s;
   }
-
-  .css {
-    background: #2965f1;
+.css {
+    animation-timing-function: ease-out;
     animation: css 2s linear forwards;
-    animation-timing-function:ease-out;
+    background: #2965f1;
   }
-
-  .css span {
+.css span {
+    animation: fadeIn 3s;
     border: #2965f1 1px solid;
-    animation: fadeIn 3s;
   }
-
-  .javascript {
-    background: #f0db4f;
+.javascript {
+    animation-timing-function: ease-out;
     animation: javascript 2s linear forwards;
-    animation-timing-function:ease-out;
+    background: #f0db4f;
   }
-
-  .javascript span {
+.javascript span {
+    animation: fadeIn 3s;
     border: #f0db4f 1px solid;
-    animation: fadeIn 3s;
   }
-
-  .mysql {
-    background: #00758f;
+.mysql {
+    animation-timing-function: ease-out;
     animation: mysql 2s linear forwards;
-    animation-timing-function:ease-out;
+    background: #00758f;
   }
-
-  .mysql span {
+.mysql span {
+    animation: fadeIn 3s;
     border: #00758f 1px solid;
-    animation: fadeIn 3s;
   }
-
-  .php {
-    background: #8993be;
+.php {
+    animation-timing-function: ease-out;
     animation: php 2s linear forwards;
-    animation-timing-function:ease-out;
+    background: #8993be;
   }
-
-  .php span {
+.php span {
+    animation: fadeIn 3s;
     border: #8993be 1px solid;
-    animation: fadeIn 3s;
   }
-
-  .csharp {
-    background: #A179DC;
+.csharp {
+    animation-timing-function: ease-out;
     animation: csharp 2s linear forwards;
-    animation-timing-function:ease-out;
+    background: #a179dc;
   }
-
-  .csharp span {
-    border: #A179DC 1px solid;
+.csharp span {
     animation: fadeIn 3s;
+    border: #a179dc 1px solid;
   }
-
-  .ruby {
-    background: red;
+.ruby {
+    animation-timing-function: ease-out;
     animation: ruby 2s linear forwards;
-    animation-timing-function:ease-out;
+    background: red;
   }
-
-  .ruby span {
+.ruby span {
+    animation: fadeIn 3s;
     border: red 1px solid;
-    animation: fadeIn 3s;
   }
-
-  .python {
-    background: #FFD43B;
+.python {
+    animation-timing-function: ease-out;
     animation: python 2s linear forwards;
-    animation-timing-function:ease-out;
+    background: #ffd43b;
   }
-
-  .python span {
-    border: #FFD43B 1px solid;
+.python span {
     animation: fadeIn 3s;
+    border: #ffd43b 1px solid;
   }
-
-  @keyframes python {
-    100% {
+@keyframes python {
+  100% {
       width: 20%;
     }
   }
-
-  @keyframes ruby {
-    100% {
+@keyframes ruby {
+  100% {
       width: 35%;
     }
   }
-
-  @keyframes csharp {
-    100% {
+@keyframes csharp {
+  100% {
       width: 30%;
     }
   }
-
-  @keyframes php {
-    100% {
+@keyframes php {
+  100% {
       width: 65%;
     }
   }
-
-  @keyframes mysql {
-    100% {
+@keyframes mysql {
+  100% {
       width: 50%;
     }
   }
-
-  @keyframes javascript {
-    100% {
+@keyframes javascript {
+  100% {
       width: 70%;
     }
   }
-
-  @keyframes css {
-    100% {
+@keyframes css {
+  100% {
       width: 60%;
     }
   }
-
-  @keyframes html {
-    100% {
+@keyframes html {
+  100% {
       width: 75%;
     }
   }
-
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+    }
+  100% {
+      opacity: 1;
+    }
   }
-
-
-
-  
